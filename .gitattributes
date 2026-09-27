@@ -1,0 +1,4 @@
+02_codes/01_KF-GINS/KF-GINS-main/dataset/KF_GINS_IMU_ERR.txt filter=lfs diff=lfs merge=lfs -text
+02_codes/01_KF-GINS/KF-GINS-main/dataset/KF_GINS_Navresult.nav filter=lfs diff=lfs merge=lfs -text
+02_codes/01_KF-GINS/KF-GINS-main/dataset/KF_GINS_STD.txt filter=lfs diff=lfs merge=lfs -text
+02_codes/01_KF-GINS/KF-GINS-main/dataset/awesome-gins-datasets/ICM20602/result/KF_GINS_STD.txt filter=lfs diff=lfs merge=lfs -text
