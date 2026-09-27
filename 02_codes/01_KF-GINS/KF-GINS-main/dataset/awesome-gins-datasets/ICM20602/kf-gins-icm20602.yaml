@@ -1,0 +1,39 @@
+# KF-GINS configuration for ICM20602 in awesome-gins-datasets
+# Noise parameters and lever-arm follow
+# https://github.com/i2Nav-WHU/awesome-gins-datasets
+
+imupath: "./dataset/awesome-gins-datasets/ICM20602/ICM20602/ICM20602.txt"
+gnsspath: "./dataset/awesome-gins-datasets/GNSS RTK/GNSS_RTK.pos"
+outputpath: "./dataset/awesome-gins-datasets/ICM20602/result"
+
+imudatalen: 7
+imudatarate: 200
+
+# IMU file starts at 357473.002747981 s
+starttime: 357473.003
+endtime: -1
+
+# initial state from the first epoch of ICM20602/truth.nav
+initpos: [ 30.4604298544, 114.4725036426, 23.08011 ]
+initvel: [ 0.00255, -0.01352, 0.00602 ]
+initatt: [ 1.63086, -0.13135, 276.88267 ]
+
+initgyrbias: [ 0, 0, 0 ]
+initaccbias: [ 0, 0, 0 ]
+initgyrscale: [ 0, 0, 0 ]
+initaccscale: [ 0, 0, 0 ]
+
+initposstd: [ 0.05, 0.05, 0.10 ]
+initvelstd: [ 0.05, 0.05, 0.05 ]
+initattstd: [ 0.10, 0.10, 0.50 ]
+
+imunoise:
+  arw: [0.2, 0.2, 0.2]
+  vrw: [0.2, 0.2, 0.2]
+  gbstd: [200.0, 200.0, 200.0]
+  abstd: [1000.0, 1000.0, 1000.0]
+  gsstd: [1000.0, 1000.0, 1000.0]
+  asstd: [1000.0, 1000.0, 1000.0]
+  corrtime: 1.0
+
+antlever: [ -0.073, 0.302, 0.087 ]
